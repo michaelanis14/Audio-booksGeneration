@@ -26,7 +26,7 @@ python tone_analyzed_synthesis.py --checkpoint ~/tacotron/logs-tacotron/model.ck
 python pyMorph.py
 ```
 
-## Trainning RNN network
+## Training RNN network
 
 * Run tensorflow-lstm.py
 
