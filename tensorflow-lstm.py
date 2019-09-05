@@ -96,6 +96,7 @@ target_placeholder = tf.placeholder(tf.float32, (32, 189, 1025))
 
 # lstm = tf.contrib.rnn.BasicLSTMCell(100)
 lstm = tf.nn.rnn_cell.BasicLSTMCell(100)
+
 rnn, states = tf.nn.dynamic_rnn(lstm, input_placeholder, dtype=tf.float32)
 
 
@@ -129,7 +130,7 @@ x = prepare_input(training_set_path)
 y = prepare_targets(training_set_path)
 #
 x_test = prepare_input_test(test_set_path)
-y = prepare_target_test(test_set_path)
+y_test = prepare_target_test(test_set_path)
 epochs = 50000
 batch_size = 32
 rate = 0.01
